@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",system-ui,sans-serif;
+}
+
+.login-body{
+    min-height:100vh;
+    background:#f5f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.login-wrapper{
+    width:100%;
+    max-width:420px;
+    padding:20px;
+}
+.login-card{
+background:#fff;
+padding:35px;
+border-radius:14px;
+box-shadow:0 15px 40px rgba(0,0,0,0.08);
+text-align:center;
+}
+.login-header{
+    margin-bottom:30px;
+}
+.login-header img{
+    width:70px;
+    margin-bottom:10px;
+}
+.login-header h2{
+    font-size:22px;
+    color:#1f2937;
+}
+.login-header p{
+    font-size:14px;
+    color:#6b7280;
+}
+.input-box{
+    position:relative;
+    margin-bottom:22px;
+}
+.input-box input{
+    width:100%;
+    padding:14px 12px;
+    border:1px solid #d1d5db;
+    border-radius:8px;
+    outline:none;
+    font-size:14px;
+    background:none;
+}
+.input-box label{
+    position:absolute;
+    top:50%;
+    left:12px;
+    color:#6b7280;
+    font-size:13px;
+    pointer-events:none;
+    transform:translateY(-50%);
+    transition:.3s;
+    background:#fff;
+    padding:0 5px;
+}
+.input-box input:focus + label,
+.input-box input:valid + label{
+    top:-7px;
+    font-size:11px;
+    color:#2563eb;
+}
+.toggle-pass{
+    position:absolute;
+    right:10px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    font-size:14px;
+}
+.password-strength{
+    width:100%;
+    height:6px;
+    background:#ddd;
+    margin-top:10px;
+    border-radius:4px;
+}
+#strength-bar{
+    height:100%;
+    width:0%;
+    border-radius:4px;
+    transition:.3s;
+}
+.login-btn{
+    width:100%;
+    padding:14px;
+    background:#2563eb;
+    border:none;
+    color:#fff;
+    font-size:15px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+.login-btn:hover{
+    background:#1d4ed8;
+}
+.login-footer{
+    margin-top:18px;
+    text-align:center;
+}
+.login-footer a{
+    font-size:13px;
+    color:#2563eb;
+    text-decoration:none;
+}
+.login-footer a:hover{
+text-decoration:underline;
+}
+
+@media(max-width:480px){
+    .login-card{
+        padding:25px;
+    }
+
+    .login-header h2{
+        font-size:20px;
+    }
+}

@@ -1,0 +1,21 @@
+body {
+    font-family: system-ui;
+    background: #f4f6fb;
+    padding: 30px;
+}
+
+.question {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}

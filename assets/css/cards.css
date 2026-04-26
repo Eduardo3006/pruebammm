@@ -1,0 +1,756 @@
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+    overflow:hidden;
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:15px;
+}
+
+.card-body h3{
+    margin:0 0 8px;
+}
+
+.actions{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+
+.actions button{
+    flex:1;
+    padding:8px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    background:#1976d2;
+    color:#fff;
+}
+
+.actions button:last-child{
+    background:#2e7d32;
+}
+
+/* ================= HEADER FLEMING ================= */
+
+.topbar {
+    height: 70px;
+    background: #f8fafc;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+/* ===== BUSCADOR ===== */
+.search-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box input {
+    width: 420px;
+    padding: 11px 18px;
+    border-radius: 30px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-box input::placeholder {
+    color: #64748b;
+}
+
+/* ===== ICONOS DERECHA ===== */
+.top-icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    font-size: 18px;
+    color: #0f172a;
+}
+
+/* Iconos */
+.top-icons span {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Contador mensajes */
+.top-icons span:first-child {
+    font-size: 15px;
+}
+
+/* Badge notificaciones */
+#notifCount {
+    background: #22c55e;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px 6px;
+    border-radius: 20px;
+    position: absolute;
+    top: -6px;
+    right: -10px;
+}
+
+/* ===== CAJA NOTIFICACIONES ===== */
+.notif-box {
+    position: absolute;
+    top: 60px;
+    right: 120px;
+    width: 260px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    display: none;
+    z-index: 999;
+}
+
+/* ===== USUARIO ===== */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    border-radius: 25px;
+    padding: 6px 14px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.user-menu span {
+    font-weight: 500;
+    color: #0f172a;
+}
+
+/* ===== HOVER SUAVE ===== */
+.top-icons span:hover,
+.user-menu:hover {
+    opacity: 0.8;
+}
+.top-icon{
+    cursor:pointer;
+}
+
+.top-icon:hover{
+    opacity:.7;
+}
+.cards-container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.card-netflix{
+    position: relative;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* IMAGEN */
+.card-bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* ZOOM */
+.card-netflix:hover .card-bg{
+    transform: scale(1.1);
+}
+
+/* OVERLAY OSCURO */
+.overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+/* INFO */
+.card-info{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+}
+
+.card-info h3{
+    font-size: 18px;
+    margin: 0;
+}
+
+.card-info p{
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* BOTÓN ⚙️ */
+.card-actions{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.card-actions a{
+    background: rgba(0,0,0,0.6);
+    padding: 8px;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.card-actions a:hover{
+    background: #0e62c3;
+}
+.card-netflix:hover{
+    transform: scale(1.03);
+    z-index: 2;
+}
+.card-netflix{
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* CONTENEDOR */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* CARD */
+.card-netflix {
+    position: relative;
+    height: 260px;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* IMAGEN */
+.card-netflix img.card-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* OVERLAY oscuro */
+.card-netflix .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+/* INFO */
+.card-netflix .card-info {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #fff;
+}
+
+.card-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+/* BOTÓN ADMIN */
+.card-actions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.card-actions a {
+    background: rgba(0,0,0,0.6);
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* HOVER estilo Netflix */
+.card-netflix:hover {
+    transform: scale(1.08);
+    z-index: 10;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+/* Tablet */
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+}
+
+/* Celular */
+@media (max-width: 480px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card-netflix {
+        height: 200px;
+    }
+}
+/* TITULO */
+.titulo-seccion {
+    color: #fff;
+    margin: 20px 0 10px 20px;
+}
+
+/* FILA tipo Netflix */
+.fila-netflix {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 20px;
+    scroll-behavior: smooth;
+}
+
+/* Scroll invisible */
+.fila-netflix::-webkit-scrollbar {
+    display: none;
+}
+
+/* CARD */
+.card-netflix {
+    min-width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+/* Imagen */
+.card-netflix img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+/* Info */
+.card-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
+
+/* Hover */
+.card-netflix:hover {
+    transform: scale(1.1);
+    z-index: 5;
+}
+/* BLOQUE DE CADA CUATRIMESTRE */
+.cuatrimestre-bloque {
+    margin-bottom: 30px;
+}
+
+/* HEADER */
+.cuatrimestre-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+/* TITULO */
+.cuatrimestre-header h2 {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* BADGE ACTUAL */
+.badge-actual {
+    background: #00c853;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* RESALTAR ACTUAL */
+.cuatrimestre-bloque.activo {
+    border-left: 5px solid #00c853;
+    background: rgba(0, 200, 83, 0.05);
+}
+
+/* FILA */
+.fila-netflix {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px 20px;
+}
+
+.fila-netflix::-webkit-scrollbar {
+    display: none;
+}
+
+/* CARD */
+.card-netflix {
+    min-width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-netflix img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+/* INFO */
+.card-info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
+
+/* HOVER */
+.card-netflix:hover {
+    transform: scale(1.1);
+    z-index: 5;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+.guia-usuario{
+    background: #111;
+    color: #fff;
+    padding: 15px 20px;
+    border-left: 5px solid #00c853;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.guia-usuario h2{
+    margin: 0;
+}
+.guia-usuario p{
+    margin: 5px 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+/* CONTENEDOR GENERAL */
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* BLOQUE DE CUATRIMESTRE */
+.cuatrimestre-bloque{
+    padding: 15px;
+    border-radius: 12px;
+    background: #111;
+}
+
+.cuatrimestre-bloque.activo{
+    border: 2px solid #00ff88;
+    box-shadow: 0 0 15px rgba(0,255,136,0.4);
+}
+
+/* HEADER */
+.cuatrimestre-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.badge-actual{
+    background: #00ff88;
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* FILA NETFLIX */
+.fila-netflix{
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+/* CARD */
+.card-netflix{
+    position: relative;
+    min-width: 200px;
+    height: 260px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card-netflix:hover{
+    transform: scale(1.05);
+}
+
+/* IMAGEN */
+.card-bg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* OVERLAY */
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+}
+
+/* INFO */
+.card-info{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+}
+
+.card-info h3{
+    font-size: 16px;
+}
+
+/* BADGE DENTRO DE CARD */
+.card-badge{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 11px;
+    border-radius: 6px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .card-netflix{
+        min-width: 150px;
+        height: 220px;
+    }
+}
+.fila-wrapper{
+    position: relative;
+}
+
+/* FLECHAS */
+.flecha{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border: none;
+    font-size: 25px;
+    width: 40px;
+    height: 60px;
+    cursor: pointer;
+    z-index: 20;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.flecha:hover{
+    background: #0e62c3;
+}
+
+/* IZQUIERDA */
+.flecha.izquierda{
+    left: 5px;
+}
+
+/* DERECHA */
+.flecha.derecha{
+    right: 5px;
+}
+
+/* OCULTAR EN CELULAR */
+@media(max-width:768px){
+    .flecha{
+        display: none;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: #1e1e2f;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 700px;
+    max-height: 90vh; /* 👈 evita que se salga */
+    overflow-y: auto; /* 👈 scroll interno */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.modal-content h2{
+    text-align:center;
+    margin-bottom:15px;
+}
+
+.form-group{
+    margin-bottom:10px;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:8px;
+    border-radius:8px;
+    outline:none;
+}
+
+.modal-buttons{
+    display:flex;
+    justify-content:space-between;
+    margin-top:15px;
+}
+
+.btn-save{
+    background:#4CAF50;
+    border:none;
+    padding:10px;
+    border-radius:8px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.btn-cancel{
+    background:#e74c3c;
+    border:none;
+    padding:10px;
+    border-radius:8px;
+    color:#fff;
+    cursor:pointer;
+}
+
+@keyframes fadeIn{
+    from{opacity:0; transform:scale(0.9);}
+    to{opacity:1; transform:scale(1);}
+}
+
+.preview-container{
+    margin-top:10px;
+    text-align:center;
+}
+
+.preview-container img{
+    width:100%;
+    max-height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    border:2px solid #444;
+    transition:0.3s;
+}
+
+.preview-container img:hover{
+    transform:scale(1.03);
+}
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: span 2; /* ocupa todo el ancho */
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 5px;
+}
